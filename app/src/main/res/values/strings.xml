@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">News</string>
+    <string name="empty_bookmark">"You do not have bookmark "</string>
+    <string name="saved_bookmark_message">Successfully saved your article!</string>
+</resources>
