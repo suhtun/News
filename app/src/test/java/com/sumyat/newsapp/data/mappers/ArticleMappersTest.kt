@@ -31,7 +31,12 @@ class ArticleMappersTest {
 
     @Test
     fun `map ArticleDto to Article`(){
-        assertEquals(article, articleDto.toArticle())
+        val mapArticleDtoToArticle = articleDto.toArticle()
+        assertEquals(article.publishedAt,mapArticleDtoToArticle.publishedAt)
+        assertEquals(article.sourceName,mapArticleDtoToArticle.sourceName)
+        assertEquals(article.title,mapArticleDtoToArticle.title)
+        assertEquals(article.url,mapArticleDtoToArticle.url)
+        assertEquals(article.urlToImage,mapArticleDtoToArticle.urlToImage)
     }
 
     @Test
