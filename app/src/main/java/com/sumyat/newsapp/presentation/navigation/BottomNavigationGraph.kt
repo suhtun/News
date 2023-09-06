@@ -24,7 +24,7 @@ fun BottomNavigationGraph(navController: NavHostController, modifier: Modifier =
         }
         composable(BottomNavItem.Search.screen_route) {
             SearchNewsRoute(modifier = modifier, navigateToWebView = { id, url ->
-                navController.navigate(route = "webview/${id}?url=${url}")
+                navController.navigate(route = "webview?url=${url}")
             })
         }
 

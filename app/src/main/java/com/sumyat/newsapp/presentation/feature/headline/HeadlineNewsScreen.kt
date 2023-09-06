@@ -58,7 +58,7 @@ fun HeadlineNewsScreen(
     Box(
         modifier = Modifier
             .fillMaxSize()
-            .padding(horizontal = 12.dp)
+            .padding(start = 12.dp, end = 12.dp, top = 8.dp, bottom = 12.dp )
     ) {
         if (articles.loadState.refresh is LoadState.Loading) {
             CircularProgressIndicator(

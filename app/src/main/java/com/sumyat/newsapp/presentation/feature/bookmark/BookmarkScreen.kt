@@ -38,7 +38,7 @@ fun BookmarkScreen(bookmarksUiState: BookmarksUiState,navigateToWebView: (id: In
     Box(
         modifier = modifier
             .fillMaxSize()
-            .padding(horizontal = 12.dp)
+            .padding(start = 12.dp, end = 12.dp, top = 8.dp)
     ) {
         if (bookmarksUiState.isLoading) {
             CircularProgressIndicator(
